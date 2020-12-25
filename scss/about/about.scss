@@ -1,0 +1,118 @@
+.about_box {
+    .about_title {
+        font: 700 2.5rem 'Inter', sans-serif;
+        margin-bottom: 15px;
+        @media (max-width: 990px) {
+            font: 700 2rem 'Inter', sans-serif;
+        }
+        @media (max-width: 380px) {
+            font: 700 1.6rem 'Inter', sans-serif;
+        }
+    }
+    .about_text {
+        max-width: 451px;
+        font: 400 1.125rem/27px 'Inter', sans-serif;
+        @media (max-width: 990px) {
+            font: 400 .95rem/22px 'Inter', sans-serif;
+        }
+    }
+}
+
+.about {
+    position: relative;
+    height: 600px;
+    margin-bottom: 30px;
+    @media (max-width: 990px) {
+        height: auto;
+        margin: 0;
+    }
+    .about_paralax_1 {
+        position: absolute;
+        top: -50px;
+        animation: paralax 12s infinite;
+        @media (max-width: 990px) {
+            height: 100px;
+            top: -100px;
+        }
+    }
+    .about_paralax_2 {
+        position: absolute;
+        left: -20px;
+        bottom: 50px;
+        animation: paralax 12s infinite;
+        @media (max-width: 990px) {
+            bottom: -50px;
+            left: -10px;
+            height: 80px;
+        }
+    }
+    @-webkit-keyframes paralax {
+        0% {
+            transform: translateX(4px);
+        }
+        10% {
+            transform: translateX(8px);
+        }
+        20% {
+            transform: translateX(4px);
+        }
+        30% {
+            transform: translateX(8px);
+        }
+        40% {
+            transform: translateX(4px);
+        }
+        50% {
+            transform: translateX(8px);
+        }
+        60% {
+            transform: translateX(4px);
+        }
+        70% {
+            transform: translateX(8px);
+        }
+        80% {
+            transform: translateX(4px);
+        }
+        90% {
+            transform: translateX(8px);
+        }
+        100% {
+            transform: translateX(4px);
+        }
+    }
+    .container {
+        height: 100%;
+    }
+    .about_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        align-items: center;
+        height: 100%;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            margin: 60px 0;
+        }
+    }
+    .about_img {
+        position: absolute;
+        right: 0;
+        max-width: 100%;
+        height: auto;
+        display: block;
+        top: 0;
+        @media (max-width: 1280px) {
+            margin: 0 auto;
+            position: relative;
+            right: -45px;
+        }
+        @media (max-width: 990px) {
+            margin: 0 auto;
+            position: relative;
+            right: -15px;
+            top: -15px;
+        }
+    }
+}

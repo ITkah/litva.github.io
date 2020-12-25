@@ -1,0 +1,142 @@
+footer {
+    padding: 40px 0;
+    background: #273043;
+    @media (max-width: 990px) {
+        padding: 30px 0;
+    }
+}
+
+.footer_politika_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 990px) {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .politika_box {
+        @media (max-width: 990px) {
+            margin-top: 20px;
+        }
+        a {
+            color: #fff;
+            text-decoration: underline;
+            margin-bottom: 8px;
+            display: block;
+            font: 400 .87rem 'Inter', sans-serif;
+        }
+        p {
+            color: #fff;
+            opacity: .5;
+            font: 400 .87rem 'Inter', sans-serif;
+        }
+    }
+    .social_wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        left: 38px;
+        @media (max-width: 990px) {
+            left: 0;
+        }
+        a {
+            margin: 0 8px;
+            height: 43px;
+            width: 43px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #E16157;
+            transition: .3s;
+            @media (max-width: 990px) {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+.footer_wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    @media (max-width: 990px) {
+        margin-bottom: 25px;
+        flex-direction: column;
+    }
+    .footer_logo {
+        display: flex;
+        align-items: center;
+        @media (max-width: 990px) {
+            margin-bottom: 25px;
+        }
+    }
+    .footer_nav {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        @media (max-width: 990px) {
+            margin-bottom: 25px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+        }
+        @media (max-width: 320px) {
+            grid-template-columns: 1fr;
+        }
+        li {
+            a {
+                color: #FFF;
+                transition: .3s;
+                padding: 0 25px;
+                text-decoration: none;
+                font: 400 1.125rem 'Inter', sans-serif;
+                @media (max-width: 1150px) {
+                    padding: 0 20px;
+                    font: 400 1rem 'Inter', sans-serif;
+                }
+                @media (max-width: 990px) {
+                    padding: 0;
+                    display: block;
+                }
+                &:hover {
+                    color: #E16157;
+                }
+            }
+        }
+    }
+    .footer_feedback {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+        a {
+            color: #FFF;
+            text-decoration: none;
+            font: 400 1.125rem 'Inter', sans-serif;
+            padding-left: 30px;
+            position: relative;
+        }
+        .mail {
+            &::before {
+                position: absolute;
+                content: url(../img/icon/gmail.svg);
+                left: 0;
+                top: 2px;
+            }
+        }
+        .phone {
+            &::before {
+                position: absolute;
+                content: url(../img/icon/phone.svg);
+                left: 2px;
+                top: 2px;
+            }
+        }
+    }
+}

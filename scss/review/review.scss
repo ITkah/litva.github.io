@@ -1,0 +1,88 @@
+.review {
+    position: relative;
+    overflow: hidden;
+    background: url(../img/review.png) no-repeat center center/cover;
+    .container {
+        z-index: 9;
+        padding: 50px 0;
+        position: relative;
+        @media (max-width: 990px) {
+            padding: 30px 0;
+        }
+    }
+    .review_panel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        .review_left {
+            cursor: pointer;
+        }
+        .review_num {
+            margin: 0 15px;
+            display: flex;
+            align-items: center;
+            p {
+                color: #fff;
+                font: 400 1.2rem 'Inter', sans-serif;
+            }
+            .active_slid {
+                position: relative;
+                top: -8px;
+            }
+            span {
+                margin: 0 2px;
+                color: #FFF;
+                opacity: .5;
+                font: 400 2.1rem 'Inter', sans-serif;
+            }
+            .all_slid {
+                position: relative;
+                bottom: -8px;
+            }
+        }
+        .review_right {
+            cursor: pointer;
+        }
+    }
+    .review_title {
+        text-align: center;
+        color: #fff;
+        font: 700 2.5rem 'Inter', sans-serif;
+        margin-bottom: 12px;
+        @media (max-width: 990px) {
+            text-align: center;
+            margin-bottom: 10px;
+            font: 700 2rem 'Inter', sans-serif;
+        }
+        @media (max-width: 380px) {
+            font: 700 1.6rem 'Inter', sans-serif;
+        }
+    }
+    .review_box {
+        .review_text {
+            margin-bottom: 10px;
+            font: 400 .95rem/23px 'Inter', sans-serif;
+            color: #FFF;
+            text-align: center;
+        }
+        .review_name {
+            color: #FFF;
+            margin-bottom: 5px;
+            font: 700 1.2rem 'Inter', sans-serif;
+            text-align: center;
+        }
+        .review_prof {
+            color: #FFF;
+            font: 400 .75rem 'Inter', sans-serif;
+            text-align: center;
+        }
+    }
+    .review_box {
+        max-width: 515px;
+        margin: 0 auto;
+    }
+    .slick-slide {
+        outline: none;
+    }
+}

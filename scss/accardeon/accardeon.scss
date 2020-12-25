@@ -1,0 +1,101 @@
+.accordeon {
+    .accordeon_title {
+        font: 700 2.5rem 'Inter', sans-serif;
+        margin-bottom: 25px;
+        text-align: center;
+        @media (max-width: 990px) {
+            font: 700 2rem 'Inter', sans-serif;
+            margin-bottom: 25px;
+        }
+        @media (max-width: 380px) {
+            margin-bottom: 20px;
+            font: 700 1.6rem 'Inter', sans-serif;
+        }
+        br {
+            @media (max-width: 990px) {
+                display: none;
+            }
+        }
+    }
+    .accordeon_wrap {
+        grid-gap: 30px 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+        .acc_box {
+            padding: 18px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            border: 1px solid #CCCCCC;
+            @media (max-width: 990px) {
+                padding: 15px;
+            }
+        }
+        .acc-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .acc_title {
+                font: 400 1.2rem 'Inter', sans-serif;
+                @media (max-width: 990px) {
+                    font: 400 1.125rem 'Inter', sans-serif;
+                }
+            }
+            .red {
+                color: #E16157;
+            }
+            .acc_btn {
+                height: 32px;
+                width: 32px;
+                padding: 2px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #E16157;
+                margin: 0;
+                border-radius: 50%;
+                @media (max-width: 990px) {
+                    height: 25px;
+                    width: 25px;
+                }
+                span {
+                    position: relative;
+                    top: -2px;
+                    color: #E16157;
+                    font: 400 1.875rem 'Inter', sans-serif;
+                    @media (max-width: 990px) {
+                        font: 400 1.4rem 'Inter', sans-serif;
+                    }
+                }
+                .minus_elem {
+                    display: none;
+                }
+            }
+            .plus {
+                .minus_elem {
+                    display: block;
+                }
+                .plus_elem {
+                    display: none;
+                }
+            }
+        }
+        .acc-body {
+            display: none;
+            @media (max-width: 990px) {
+                padding-top: 5px;
+            }
+            p {
+                font: 400 1rem/24px 'Inter', sans-serif;
+                max-width: 430px;
+                @media (max-width: 990px) {
+                    font: 400 .95rem/22px 'Inter', sans-serif;
+                }
+            }
+        }
+    }
+}

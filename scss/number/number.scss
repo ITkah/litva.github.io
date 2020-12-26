@@ -9,12 +9,14 @@
     .number_title {
         text-align: center;
         margin-bottom: 30px;
+        color: #fff;
         font: 400 1.875rem 'Inter', sans-serif;
         @media (max-width: 990px) {
             margin-bottom: 20px;
             font: 700 1.5rem 'Inter', sans-serif;
         }
         span {
+            color: #fff;
             font: 700 1.875rem 'Inter', sans-serif;
             @media (max-width: 990px) {
                 font: 700 1.5rem 'Inter', sans-serif;
@@ -40,6 +42,7 @@
             .nubmer_box_title {
                 text-align: center;
                 margin-bottom: 10px;
+                color: #fff;
                 font: 700 1.875rem 'Inter', sans-serif;
                 @media (max-width: 990px) {
                     font: 700 1.5rem 'Inter', sans-serif;
@@ -47,6 +50,7 @@
             }
             .nubmer_box_text {
                 height: 75px;
+                color: #fff;
                 text-align: center;
                 font: 400 1.125rem/25px 'Inter', sans-serif;
                 @media (max-width: 990px) {

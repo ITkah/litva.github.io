@@ -1,4 +1,10 @@
 .accordeon {
+    .container {
+        margin-bottom: 110px;
+        @media (max-width: 990px) {
+            margin: 0;
+        }
+    }
     .accordeon_title {
         font: 700 2.5rem 'Inter', sans-serif;
         margin-bottom: 25px;

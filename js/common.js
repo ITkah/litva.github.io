@@ -30,6 +30,11 @@ $(".menu_btn").on("click", function() {
     $("nav").toggleClass("active_menu");
 });
 
+$(".textarea_form").keyup(function() {
+    var coll = $(this).val().length;
+    $(".coll_letter").text(coll);
+});
+
 $(".mob_box p").on("click", function() {
     $(this).siblings(".sub-menu").slideToggle(100);
 });

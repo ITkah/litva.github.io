@@ -1,6 +1,7 @@
 footer {
     padding: 40px 0;
     background: #273043;
+    padding-top: 160px;
     @media (max-width: 990px) {
         padding: 30px 0;
     }
@@ -104,6 +105,7 @@ footer {
                 @media (max-width: 990px) {
                     padding: 0;
                     display: block;
+                    white-space: nowrap;
                 }
                 &:hover {
                     color: #E16157;

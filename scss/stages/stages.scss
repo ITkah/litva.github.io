@@ -1,0 +1,93 @@
+.stages {
+    .stages_title {
+        text-align: center;
+        margin-bottom: 30px;
+        font: 700 2.5rem 'Inter', sans-serif;
+        @media (max-width: 990px) {
+            margin-bottom: 20px;
+            font: 700 2rem 'Inter', sans-serif;
+        }
+        @media (max-width: 380px) {
+            font: 700 1.6rem 'Inter', sans-serif;
+        }
+    }
+    .stages_wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 73px 30px;
+        position: relative;
+        @media (max-width: 1280px) {
+            grid-gap: 45px 30px;
+        }
+        @media (max-width: 1024px) {
+            grid-gap: 40px 30px;
+        }
+        @media (max-width: 990px) {
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 25px;
+        }
+        @media (max-width: 576px) {
+            grid-template-columns: 1fr;
+        }
+        .stages_bg {
+            position: absolute;
+            left: -40px;
+            width: 100%;
+            top: 30px;
+            height: 225px;
+            @media (max-width: 1280px) {
+                top: 15px;
+                left: -35px;
+            }
+            @media (max-width: 1100px) {
+                top: 5px;
+            }
+            @media (max-width:1024px) {
+                left: -30px;
+            }
+            @media (max-width: 1020px) {
+                display: none;
+            }
+        }
+        .stages_box {
+            position: relative;
+            z-index: 9;
+            .stages_num {
+                border-radius: 50%;
+                background: #E16157;
+                padding: 3px;
+                height: 60px;
+                width: 60px;
+                font: 700 1.875rem 'Inter', sans-serif;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+                @media (max-width: 990px) {
+                    margin-bottom: 15px;
+                }
+            }
+            .stages_text {
+                font: 400 1.125rem/28px 'Inter', sans-serif;
+                @media (max-width: 1280px) {
+                    font: 400 1rem/23px 'Inter', sans-serif;
+                }
+                @media (max-width: 380px) {
+                    font: 400 .95rem/22px 'Inter', sans-serif;
+                }
+                br {
+                    @media (max-width: 1280px) {
+                        display: none;
+                    }
+                    @media (max-width: 990px) {
+                        display: block;
+                    }
+                    @media (max-width: 576px) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

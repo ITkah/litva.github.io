@@ -1,4 +1,10 @@
 .about_box {
+    @media (max-width: 1600px) {
+        padding-left: 70px;
+    }
+    @media (max-width: 990px) {
+        padding: 0;
+    }
     .about_title {
         font: 700 2.5rem 'Inter', sans-serif;
         margin-bottom: 15px;

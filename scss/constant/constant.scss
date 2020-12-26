@@ -55,3 +55,13 @@ button {
 main {
     min-height: calc(100vh - 80px);
 }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}

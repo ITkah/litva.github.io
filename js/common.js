@@ -26,6 +26,14 @@ $('.phone').on('input', function() {
     $(this).val($(this).val().replace(/[A-Za-zА-Яа-яЁё]/, ''))
 });
 
+$(".menu_btn").on("click", function() {
+    $("nav").toggleClass("active_menu");
+});
+
+$(".mob_box p").on("click", function() {
+    $(this).siblings(".sub-menu").slideToggle(100);
+});
+
 $('.popup-with-zoom-anim').magnificPopup({
     type: 'inline',
 

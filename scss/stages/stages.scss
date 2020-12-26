@@ -4,7 +4,6 @@
         margin-bottom: 30px;
         font: 700 2.5rem 'Inter', sans-serif;
         @media (max-width: 990px) {
-            margin-bottom: 20px;
             font: 700 2rem 'Inter', sans-serif;
         }
         @media (max-width: 380px) {
@@ -16,8 +15,21 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 73px 30px;
         position: relative;
+        &::before {
+            @media (max-width: 990px) {
+                content: '';
+                height: 100%;
+                width: 4px;
+                background: #E16157;
+                position: absolute;
+                left: 32px;
+            }
+        }
         @media (max-width: 1280px) {
-            grid-gap: 45px 30px;
+            grid-gap: 75px 30px;
+        }
+        @media (max-width: 1150px) {
+            grid-gap: 55px 30px;
         }
         @media (max-width: 1024px) {
             grid-gap: 40px 30px;
@@ -36,14 +48,18 @@
             top: 30px;
             height: 225px;
             @media (max-width: 1280px) {
-                top: 15px;
+                top: 24px;
                 left: -35px;
+            }
+            @media (max-width: 1150px) {
+                top: 15px;
             }
             @media (max-width: 1100px) {
                 top: 5px;
             }
             @media (max-width:1024px) {
-                left: -30px;
+                left: -28px;
+                top: 6px;
             }
             @media (max-width: 1020px) {
                 display: none;
@@ -52,6 +68,12 @@
         .stages_box {
             position: relative;
             z-index: 9;
+            @media (max-width: 990px) {
+                display: grid;
+                grid-template-columns: 60px 1fr;
+                align-items: center;
+                grid-gap: 20px;
+            }
             .stages_num {
                 border-radius: 50%;
                 background: #E16157;
@@ -65,7 +87,7 @@
                 justify-content: center;
                 margin-bottom: 20px;
                 @media (max-width: 990px) {
-                    margin-bottom: 15px;
+                    margin-bottom: 0;
                 }
             }
             .stages_text {
@@ -83,10 +105,22 @@
                     @media (max-width: 990px) {
                         display: block;
                     }
-                    @media (max-width: 576px) {
-                        display: none;
-                    }
                 }
+            }
+        }
+        .stages_box:nth-child(9) {
+            @media (max-width: 990px) {
+                grid-row-start: 5;
+            }
+        }
+        .stages_box:nth-child(8) {
+            @media (max-width: 990px) {
+                grid-row-start: 6;
+            }
+        }
+        .stages_box:nth-child(6) {
+            @media (max-width: 990px) {
+                grid-row-start: 8;
             }
         }
     }

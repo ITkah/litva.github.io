@@ -20,9 +20,10 @@
         font: 400 2.5rem/50px 'Inter', sans-serif;
         @media (max-width: 990px) {
             font: 400 2rem/42px 'Inter', sans-serif;
+            max-width: 500px;
         }
         @media (max-width: 380px) {
-            font: 400 1.6rem/35px 'Inter', sans-serif;
+            font: 400 1.75rem/33px 'Inter', sans-serif;
         }
         br {
             @media (max-width: 576px) {
@@ -33,6 +34,9 @@
             font: 700 2.5rem 'Inter', sans-serif;
             @media (max-width: 990px) {
                 font: 700 2rem 'Inter', sans-serif;
+            }
+            @media (max-width: 380px) {
+                font: 700 1.75rem/33px 'Inter', sans-serif;
             }
         }
     }

@@ -47,8 +47,10 @@
                     position: absolute;
                     top: 100%;
                     background: #fff;
-                    padding: 3px;
-                    left: -3px;
+                    padding: 5px 5px;
+                    border-radius: 3px;
+                    border: 1px solid rgba(0, 0, 0, 0.2);
+                    left: -9px;
                     transition: .3s;
                     @media (max-width: 990px) {
                         position: relative;
@@ -61,7 +63,21 @@
                         top: 5px;
                         transition: auto;
                     }
+                    li:first-child {
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                    }
                     li {
+                        text-align: center;
+                        padding: 2px 5px;
+                        @media (max-width: 990px) {
+                            padding: 0;
+                        }
+                        a {
+                            text-align: center;
+                            @media (max-width: 990px) {
+                                text-align: right;
+                            }
+                        }
                         &::after {
                             display: none;
                         }
@@ -111,7 +127,7 @@
                 content: url(../img/icon/phone.svg);
                 left: auto;
                 position: absolute;
-                right: 0;
+                left: -25px;
                 top: 3px;
             }
         }
@@ -125,8 +141,7 @@
             @media (max-width: 990px) {
                 content: url(../img/icon/gmail.svg);
                 position: absolute;
-                left: auto;
-                right: 0;
+                left: -30px;
                 top: 6px;
             }
         }
@@ -141,9 +156,8 @@
         position: relative;
     }
     .header_container_wrap {
-        display: grid;
-        grid-template-columns: 1fr 5fr 1fr;
-        grid-gap: 40px;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
         @media (max-width: 1100px) {
             grid-gap: 20px;
@@ -156,13 +170,29 @@
     }
     .menu_btn {
         display: none;
+        position: relative;
+        height: 30px;
+        width: 30px;
         @media (max-width: 990px) {
             display: flex;
             align-items: center;
             justify-content: flex-end;
         }
         img {
+            transition: .2s;
             height: 30px;
+        }
+        .close {
+            position: absolute;
+            opacity: 0;
+        }
+    }
+    .open_menu {
+        .open {
+            opacity: 0;
+        }
+        .close {
+            opacity: 1;
         }
     }
     .logo_box {
@@ -192,8 +222,15 @@
             @media (max-width: 990px) {
                 display: flex;
                 margin: 0;
-                margin-right: 10px;
-                margin-bottom: 5px;
+                margin-right: 0;
+                width: 100%;
+                padding: 5px 0;
+                padding-top: 8px;
+                padding-right: 10px;
+                align-items: flex-end;
+                justify-content: flex-end;
+                box-sizing: border-box;
+                border-top: 1px solid #fff;
             }
             p,
             a {
@@ -202,10 +239,20 @@
             }
             ul {
                 margin: 0;
+                li:first-child {
+                    border: none!important;
+                }
                 li {
+                    padding: 0;
                     a {
                         padding: 0;
                         color: #fff;
+                        text-align: right;
+                    }
+                    .sub-menu {
+                        top: 0;
+                        border: none;
+                        padding: 0;
                     }
                 }
             }
@@ -217,10 +264,14 @@
                 flex-direction: column;
                 align-items: flex-end;
                 padding: 0 10px;
+                width: 100%;
+                margin: 5px 0;
+                border-top: 1px solid #fff;
+                border-bottom: 1px solid #fff;
             }
             a {
                 color: #fff;
-                padding: 5px 28px 5px 0;
+                padding: 5px 0;
                 font-size: .9rem;
                 margin: 5px 0;
             }
@@ -249,15 +300,22 @@
                 margin-bottom: 5px;
             }
             li {
+                padding: 0 10px;
+                @media (max-width: 1200px) {
+                    padding: 0;
+                }
                 a {
                     color: #fff;
-                    padding: 0 10px;
+                    padding: 0 20px;
                     transition: .3s;
                     position: relative;
                     text-align: center;
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    @media (max-width: 1200px) {
+                        padding: 0 15px;
+                    }
                     @media (max-width: 990px) {
                         padding: 10px;
                     }

@@ -228,9 +228,20 @@
                 right: -40px;
             }
             @media (max-width: 990px) {
-                top: 0;
-                position: relative;
-                display: none;
+                top: auto;
+                bottom: 10px;
+                position: absolute;
+                height: 120px;
+                right: 0;
+            }
+            @media (max-width: 400px) {
+                bottom: 0;
+                height: 100px;
+            }
+            @media (max-width: 340px) {
+                bottom: 0;
+                right: -5px;
+                height: 80px;
             }
         }
     }

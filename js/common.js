@@ -22,12 +22,27 @@ $slickElement.slick({
     }
 });
 
+$(".unchor").on("click", "a", function(event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+        top = $(id).offset().top - 70;
+    $('body,html').animate({ scrollTop: top }, 1500);
+});
+
+$(".btn_feedback_unchor").on("click", function(event) {
+    event.preventDefault();
+    var id = $(this).attr('href'),
+        top = $(id).offset().top - 70;
+    $('body,html').animate({ scrollTop: top }, 1500);
+});
+
 $('.phone').on('input', function() {
     $(this).val($(this).val().replace(/[A-Za-zА-Яа-яЁё]/, ''))
 });
 
 $(".menu_btn").on("click", function() {
     $("nav").toggleClass("active_menu");
+    $(this).toggleClass("open_menu")
 });
 
 $(".textarea_form").keyup(function() {
@@ -84,4 +99,66 @@ $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
     $(this)
         .addClass('active').siblings().removeClass('active')
         .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+});
+
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 200) {
+        $('#num_1').animate({ num: 1000 }, {
+            duration: 1500,
+            step: function(num) {
+                this.innerHTML = (num).toFixed()
+            }
+        });
+    }
+});
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 200) {
+        $('#num_2').animate({ num: 4 }, {
+            duration: 1500,
+            step: function(num) {
+                this.innerHTML = (num).toFixed()
+            }
+        });
+    }
+});
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 200) {
+        $('#num_4').animate({ num: 70000 }, {
+            duration: 1500,
+            step: function(num) {
+                this.innerHTML = (num).toFixed()
+            }
+        });
+    }
+});
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 200) {
+        $('#num_3').animate({ num: 400 }, {
+            duration: 1500,
+            step: function(num) {
+                this.innerHTML = (num).toFixed()
+            }
+        });
+    }
+});
+
+
+$('.popup-with-zoom-anim').magnificPopup({
+    type: 'inline',
+
+    fixedContentPos: false,
+    fixedBgPos: true,
+
+    overflowY: 'auto',
+
+    closeBtnInside: true,
+    preloader: false,
+
+    midClick: true,
+    removalDelay: 300,
+    mainClass: 'my-mfp-zoom-in'
 });

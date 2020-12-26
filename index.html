@@ -30,6 +30,9 @@
                                         <li>
                                             <a href="#">Анг</a>
                                         </li>
+                                        <li>
+                                            <a href="#">Lv</a>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -56,21 +59,21 @@
                             <img src="img/icon/logo_footer.svg" alt="logo">
                         </div>
                         <nav>
-                            <ul>
+                            <ul class="unchor">
                                 <li>
-                                    <a href="#">Продукция</a>
+                                    <a href="#about">О нас</a>
                                 </li>
                                 <li>
-                                    <a href="#">О нас</a>
+                                    <a href="#prod">Продукция</a>
                                 </li>
                                 <li>
-                                    <a href="#">Преимущества</a>
+                                    <a href="#prem">Преимущества</a>
                                 </li>
                                 <li>
-                                    <a href="#">Доставка и оплата</a>
+                                    <a href="#dostavka">Доставка и оплата</a>
                                 </li>
                                 <li>
-                                    <a href="#">Контакты</a>
+                                    <a href="#contact">Контакты</a>
                                 </li>
                             </ul>
                             <div class="header_lang">
@@ -82,6 +85,9 @@
                                                 <li>
                                                     <a href="#">Анг</a>
                                                 </li>
+                                                <li>
+                                                    <a href="#">Lv</a>
+                                                </li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -91,27 +97,28 @@
                                 <a href="mailto:office.promay@gmail.com" class="mail">office.promay@gmail.com</a>
                                 <a href="tel:+38 (099) 469 09 42" class="phone">+38 (099) 469 09 42</a>
                             </div>
-                            <a href="#" class="btn_header">Связаться</a>
+                            <a href="#feedback" class="btn_header btn_feedback_unchor">Связаться</a>
                         </nav>
                         <div class="menu_btn">
-                            <img src="img/icon/menu.svg" loading="lazy" alt="icon">
+                            <img src="img/icon/close.svg" class="close" loading="lazy" alt="icon">
+                            <img src="img/icon/menu.svg" class="open" loading="lazy" alt="icon">
                         </div>
                         <div class="btn_header_box">
-                            <a href="#" class="btn_header">Связаться</a>
+                            <a href="#feedback" class="btn_header btn_feedback_unchor">Связаться</a>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
         <main>
-            <section class="home padding">
+            <section class="home padding" id="prod">
                 <div class="container">
                     <div class="home_container">
                         <h1 class="home_title">
                             Твой бизнес со стартовым<br> капиталом всего <span>5000 грн</span>
                         </h1>
                         <p class="home_text">Стань нашим партнером и начни<br> строить свой бизнес прямо сейчас</p>
-                        <a href="#" class="home_btn">Оставить заявку</a>
+                        <a href="#feedback" class="home_btn btn_feedback_unchor">Оставить заявку</a>
                     </div>
                 </div>
             </section>
@@ -120,25 +127,25 @@
                     <h2 class="number_title"><span>Promay</span> в цифрах</h2>
                     <div class="number_wrap">
                         <div class="number_box">
-                            <p class="nubmer_box_title">1 000+</p>
+                            <p class="nubmer_box_title"><span id="num_1">0</span>+</p>
                             <p class="nubmer_box_text">доступных товаров<br> для закупки</p>
                         </div>
                         <div class="number_box">
-                            <p class="nubmer_box_title">4</p>
+                            <p class="nubmer_box_title"><span id="num_2">0</span></p>
                             <p class="nubmer_box_text">японских бренда с<br> внутреннего рынка<br> Японии</p>
                         </div>
                         <div class="number_box">
-                            <p class="nubmer_box_title">400+</p>
+                            <p class="nubmer_box_title"><span id="num_3">0</span>+</p>
                             <p class="nubmer_box_text">довольных<br> покупателей</p>
                         </div>
                         <div class="number_box">
-                            <p class="nubmer_box_title">70 000</p>
+                            <p class="nubmer_box_title"><span id="num_4">0</span></p>
                             <p class="nubmer_box_text">гривен средний<br> ежемесячный оборот<br> наших партнеров</p>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="about padding">
+            <section class="about padding" id="about">
                 <img src="img/icon/about_1.png" class="about_paralax_1" alt="about">
                 <img src="img/icon/about_2.png" class="about_paralax_2" alt="about">
                 <div class="container">
@@ -195,7 +202,7 @@
                     </div>
                 </div>
             </section>
-            <section class="why_us padding margin">
+            <section class="why_us padding margin" id="prem">
                 <div class="container">
                     <img src="img/icon/why_paralax.png" class="why_paralax" alt="why">
                     <div class="why_us_wrap">
@@ -209,7 +216,7 @@
                     </div>
                 </div>
             </section>
-            <section class="stages padding margin">
+            <section class="stages padding margin" id="dostavka">
                 <div class="container">
                     <h3 class="stages_title">Этапы работы с нами</h3>
                     <div class="stages_wrap">
@@ -266,7 +273,7 @@
                     </div>
                 </div>
             </section>
-            <section class="feedback padding margin">
+            <section class="feedback padding margin" id="feedback">
                 <div class="container">
                     <div class="feedback_form_wrap">
                         <form class="feedback_form">
@@ -367,7 +374,7 @@
                     </div>
                 </div>
             </section>
-            <section class="question padding">
+            <section class="question padding" id="contact">
                 <div class="container">
                     <div class="question_wrap">
                         <div class="question_info">
@@ -435,18 +442,18 @@
                     <div class="footer_logo">
                         <img src="img/icon/logo_footer.svg" alt="logo">
                     </div>
-                    <ul class="footer_nav">
+                    <ul class="footer_nav unchor">
                         <li>
-                            <a href="#">Продукция</a>
+                            <a href="#prod">Продукция</a>
                         </li>
                         <li>
-                            <a href="#">О нас</a>
+                            <a href="#about">О нас</a>
                         </li>
                         <li>
-                            <a href="#">Преимущества</a>
+                            <a href="#prem">Преимущества</a>
                         </li>
                         <li>
-                            <a href="#">Доставка и оплата</a>
+                            <a href="#dostavka">Доставка и оплата</a>
                         </li>
                     </ul>
                     <div class="footer_feedback">
@@ -481,42 +488,11 @@
         </footer>
     </div>
 
-    <a href="#thank" class="thank_click popup-with-zoom-anim"></a>
+    <a class="popup-with-zoom-anim thank" href="#thank"></a>
 
-    <div id="thank" class="zoom-anim-dialog thank_modal mfp-hide">
-        <div class="thank_wrap">
-            <img src="img/icon/close.png" class="close_modal mfp-close" alt="close">
-            <img src="img/icon/logomain.png" class="logo_modal" alt="logo">
-            <p class="modal_title">Заявка успешно<br> отправлена
-            </p>
-            <p class="modal_text">Наш специалист свяжется с Вами <br> в ближайшее время</p>
-        </div>
-    </div>
 
-    <div id="call" class="zoom-anim-dialog form_modal mfp-hide">
-        <div class="form_feedback_wrap">
-            <img src="img/icon/close.png" class="close_modal mfp-close" alt="close">
-            <p class="pretitle_sm">ЗАКАЗАТЬ ЗВОНОК</p>
-            <h3 class="title_form">Оставьте заявку</h3>
-            <form class="form_feedback modal_feedback">
-                <div class="feedback_input_box">
-                    <p class="label_text">Ваше имя
-                        <sapn>*</sapn>
-                    </p>
-                    <input type="text" maxlength="20" name="name" required>
-                </div>
-                <div class="feedback_input_box">
-                    <p class="label_text">Телефон
-                        <sapn>*</sapn>
-                    </p>
-                    <input type="text" maxlength="11" class="phone" name="phone" required>
-                </div>
-                <div class="feedback_btn_wrap">
-                    <p>Нажимая “Отправить сообщение”, вы даете свое согласие на обработку <a href="#">персональных данных</a></p>
-                    <button type="submit" class="send_btn">ОТПРАВИТЬ СООБЩЕНИЕ</button>
-                </div>
-            </form>
-        </div>
+    <div id="thank" class="zoom-anim-dialog mfp-hide">
+        <p>Спасибо за вашу заявку</p>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>

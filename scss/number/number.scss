@@ -12,7 +12,6 @@
         color: #fff;
         font: 400 1.875rem 'Inter', sans-serif;
         @media (max-width: 990px) {
-            margin-bottom: 20px;
             font: 700 1.5rem 'Inter', sans-serif;
         }
         span {
@@ -31,6 +30,10 @@
             grid-template-columns: 1fr 1fr;
         }
         @media (max-width: 576px) {
+            grid-gap: 15px;
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 340px) {
             grid-gap: 20px;
             grid-template-columns: 1fr;
         }
@@ -58,6 +61,9 @@
                     font: 400 .95rem/22px 'Inter', sans-serif;
                 }
                 @media (max-width: 576px) {
+                    height: 80px;
+                }
+                @media (max-width: 340px) {
                     height: auto;
                 }
             }

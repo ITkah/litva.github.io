@@ -461,7 +461,7 @@
   height: 480px; }
   @media (max-width: 576px) {
     .home {
-      height: 380px; } }
+      height: 450px; } }
   .home .container {
     height: 100%;
     display: -webkit-box;
@@ -704,7 +704,8 @@
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
               flex-direction: column;
-      margin-bottom: 30px; } }
+      margin-bottom: 30px;
+      width: 100%; } }
   .brend .tabs__caption li {
     font: 400 1.5rem 'Inter', sans-serif;
     padding: 15px 20px;
@@ -716,7 +717,7 @@
     @media (max-width: 990px) {
       .brend .tabs__caption li {
         width: 100%;
-        width: auto;
+        text-align: left;
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
         font: 400 1.125rem 'Inter', sans-serif;

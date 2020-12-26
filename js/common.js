@@ -103,7 +103,7 @@ $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
 
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 200) {
+    if ($(this).scrollTop() > 100) {
         $('#num_1').animate({ num: 1000 }, {
             duration: 1500,
             step: function(num) {
@@ -114,7 +114,7 @@ $(window).scroll(function() {
 });
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 200) {
+    if ($(this).scrollTop() > 100) {
         $('#num_2').animate({ num: 4 }, {
             duration: 1500,
             step: function(num) {
@@ -125,7 +125,7 @@ $(window).scroll(function() {
 });
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 200) {
+    if ($(this).scrollTop() > 100) {
         $('#num_4').animate({ num: 70000 }, {
             duration: 1500,
             step: function(num) {
@@ -136,7 +136,7 @@ $(window).scroll(function() {
 });
 
 $(window).scroll(function() {
-    if ($(this).scrollTop() > 200) {
+    if ($(this).scrollTop() > 100) {
         $('#num_3').animate({ num: 400 }, {
             duration: 1500,
             step: function(num) {
